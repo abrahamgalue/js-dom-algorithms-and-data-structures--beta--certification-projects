@@ -1,0 +1,139 @@
+:root {
+  /* General colors */
+  --color-body: #22c55e;
+  --color-text: #fff;
+
+  /* Button colors */
+  --btn-bgcolor: #fff;
+  --btn-color-text: #22c563;
+  --btn-color-text-hover: #047857;
+  --btn-bgcolor-hover: #D1FAE5;
+  --btn-color-border-hover: #91ad9e;
+
+  /* Input and Button common colors */
+  --border-color: #e4e4e7;
+  --outline-color: #047857;
+
+  /* Success Message */
+  --success-bg: #207740;
+
+  /* Failure Message */
+  --failure-bg: #ffadad;
+  --failure-color: #850000;
+  --failure-border: #850000;
+}
+
+/* makes sizing simpler */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* remove default spacing */
+/* force styling of type through styling, rather than elements */
+
+* {
+  font: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+/* dark mode user-agent-styles */
+
+html {
+  color-scheme: dark light;
+}
+
+body {
+  background-color: var(--color-body);
+  color: var(--color-text);
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header-container {
+  margin: 4.125rem 0 2.725rem;
+  text-align: center;
+}
+
+.header-title {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.header-text {
+  margin: 0.625rem 0 0;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.825rem;
+  justify-content: center;
+  width: 400px;
+}
+
+.main-container #number {
+  border-radius: 0.75rem;
+  border: 1px solid var(--border-color);
+  padding: 0.625em;
+}
+
+.main-container #convert-btn {
+  background-color: var(--btn-bgcolor);
+  border-radius: 0.75rem;
+  border: 2px solid var(--border-color);
+  color: var(--btn-color-text);
+  font-weight: bold;
+  padding: 0.625em;
+  transition: all 0.2s ease;
+  width: -webkit-fill-available;
+}
+
+.main-container #convert-btn:hover {
+  background-color: var(--btn-bgcolor-hover);
+  border: 2px solid var(--btn-color-border-hover);
+  color: var(--btn-color-text-hover);
+  cursor: pointer;
+}
+
+.main-container #number:focus-within,
+.main-container #convert-btn:focus-visible {
+  outline: 2px solid var(--outline-color);
+}
+
+.success {
+  background-color: var(--success-bg);
+  border-radius: 25px;
+  font-size: 32px;
+  padding: 16px;
+  text-align: center;
+}
+
+.failure {
+  background-color: var(--failure-bg);
+  border-radius: 25px;
+  border: 3px solid var(--failure-border);
+  color: var(--failure-color);
+  font-size: 24px;
+  padding: 16px;
+  text-align: center;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Button colors */
+    --btn-bgcolor: #3b3b3b;
+
+    /* Input and Button common colors */
+    --border-color: #313131;
+    --outline-color: #fff;
+  }
+}
