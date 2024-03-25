@@ -49,6 +49,10 @@ html {
 body {
   background-color: var(--color-body);
   color: var(--color-text);
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  margin: 0;
 }
 
 .container {
@@ -59,7 +63,7 @@ body {
 }
 
 .header-container {
-  margin: 4.125rem 0 2.725rem;
+  margin: 0 0 2.725rem;
   text-align: center;
 }
 
