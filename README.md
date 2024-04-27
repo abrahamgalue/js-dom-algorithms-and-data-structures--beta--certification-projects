@@ -17,3 +17,4 @@ Los **proyectos principales** para obtener el certificado y que se incluyen son:
 - [Palindrome Checker](palindrome-checker-web/)
 - [Roman Numeral Converter](roman-numeral-converter/)
 - [Telephone Number Validator](telephone-number-validator/)
+- [Cash Register](cash-register-web/)
