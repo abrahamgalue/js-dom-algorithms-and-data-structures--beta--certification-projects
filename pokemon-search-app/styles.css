@@ -37,7 +37,8 @@ header {
   margin: 40px;
 }
 
-h1 {
+#title {
+  color: var(--text-color);
   font-size: 1.75rem;
 }
 
@@ -283,7 +284,7 @@ tr th {
 }
 
 @media screen and (min-width: 550px) {
-  h1 {
+  #title {
     font-size: 2rem;
   }
 
