@@ -1,0 +1,304 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Page colors */
+  --bg-color: #202124;
+  --text-color: #fff;
+
+  /* Button color */
+  --bg-color-btn-hover: #eee;
+
+  /* Inputs color */
+  --bg-input-color: rgba(0, 0, 0, 0);
+
+  /* Outline and border styles */
+  --outline-inputs: 3px solid #185abc;
+  --border: 2px solid var(--text-color);
+}
+
+body {
+  background-color: var(--bg-color);
+  color-scheme: dark light;
+  color: var(--text-color);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+header {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin: 40px;
+}
+
+h1 {
+  font-size: 1.75rem;
+}
+
+main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container {
+  border-radius: 15px;
+  border: var(--border);
+  padding: 25px 0px;
+  width: 350px;
+  background-color: var(--bg-input-color);
+}
+
+.container form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.container input {
+  background-color: var(--bg-input-color);
+  border-radius: 100px;
+  border: var(--border);
+  color: var(--text-color);
+  height: 40px;
+  padding: 10px;
+  width: 200px;
+}
+
+.container input:focus-visible {
+  outline: var(--outline-inputs)
+}
+
+.container button {
+  background-color: var(--bg-input-color);
+  border-radius: 100px;
+  border: var(--border);
+  color: var(--text-color);
+  padding: 12px 20px;
+  text-align: center;
+}
+
+.container button:hover {
+  background-color: var(--bg-color-btn-hover);
+  color: var(--bg-color);
+  cursor: pointer;
+}
+
+.container button:focus-visible {
+  outline: var(--outline-inputs);
+}
+
+.output {
+  padding: 15px;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  min-height: 325px;
+  width: 100%;
+}
+
+.name-and-id {
+  font-size: 1.1em;
+  font-weight: bold;
+  height: 28px;
+  margin: 5px 0;
+  text-transform: uppercase;
+}
+
+.weight-and-size {
+  height: 22px;
+}
+
+.sprite-container {
+  align-items: center;
+  display: flex;
+  flex-grow: 2;
+  justify-content: center;
+}
+
+#sprite {
+  width: 180px;
+}
+
+#types {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: flex-start;
+  min-height: 30px;
+}
+
+.type {
+  background-color: var(--bg-input-color);
+  border-radius: 100px;
+  border: var(--border);
+  color: var(--text-color);
+  font-size: 0.86rem;
+  padding: 5px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 80px;
+}
+
+/* Special styling for Pokémon types */
+
+.electric {
+  --text-color: #fecc33;
+}
+
+.normal {
+  --text-color: #b7b7aa;
+}
+
+.fire {
+  --text-color: #ff6f52;
+}
+
+.water {
+  --text-color: #42a1ff;
+}
+
+.grass {
+  --text-color: #78cc55;
+}
+
+.ice {
+  --text-color: #66ccfe;
+}
+
+.fighting {
+  --text-color: #d3887e;
+}
+
+.poison {
+  --text-color: #c68bb7;
+}
+
+.ground {
+  --text-color: #dfba52;
+}
+
+.flying {
+  --text-color: #8899ff;
+}
+
+.psychic {
+  --text-color: #ff66a3;
+}
+
+.bug {
+  --text-color: #aabb23;
+}
+
+.rock {
+  --text-color: #baaa66;
+}
+
+.ghost {
+  --text-color: #9995d0;
+}
+
+.dragon {
+  --text-color: #9e93f1;
+}
+
+.dark {
+  --text-color: #b59682;
+}
+
+.steel {
+  --text-color: #abaabb;
+}
+
+.fairy {
+  --text-color: #ed99ed;
+}
+
+.normal,
+.fire,
+.water,
+.electric,
+.grass,
+.ice,
+.fighting,
+.poison,
+.ground,
+.flying,
+.psychic,
+.bug,
+.rock,
+.ghost,
+.dragon,
+.dark,
+.steel,
+.fairy {
+  --border: 2px solid var(--text-color);
+}
+
+table {
+  border-spacing: 10px 0;
+  text-align: center;
+  width: 100%;
+}
+
+td,
+th {
+  padding: 7px;
+}
+
+tr th {
+  border: var(--border);
+  border-radius: 100px;
+}
+
+.container form,
+.information,
+.specifications-table {
+  width: 100%;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    /* Page colors */
+    --bg-color: #fff;
+    --text-color: #202124;
+    --bg-color-btn-hover: var(--text-color);
+    --bg-input-color: #eeeeee;
+
+    --outline-inputs: 3px solid #185abc;
+    --border: 2px solid var(--text-color);
+  }
+}
+
+@media screen and (min-width: 550px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .container {
+    padding: 25px;
+    width: 450px;
+  }
+
+  .container form,
+  .information,
+  .specifications-table {
+    width: 95%;
+  }
+
+  .type {
+    width: 75px;
+  }
+}
