@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokemon Search App - @abrahamgalue</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="public/favicon.svg" type="image/x-icon">
+</head>
+
+<body>
+  <header>
+    <h1>Pokemon Search App</h1>
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="#ef596f" stroke-width="2"
+      stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-pokeball">
+      <path d="M0 0h24v24H0z" stroke="none" />
+      <path d="M3 12a9 9 0 1 0 18 0 9 9 0 1 0-18 0" />
+      <path d="M9 12a3 3 0 1 0 6 0 3 3 0 1 0-6 0M3 12h6M15 12h6" />
+    </svg>
+  </header>
+
+  <main>
+    <div class="container">
+      <form>
+        <label for="search-input">Search for Pokémon Name or CODE:</label>
+        <input id="search-input" type="text" autocomplete="off" required>
+        <button id="search-button" type="submit">Search</button>
+      </form>
+      <div class="output">
+        <div class="information">
+          <div class="name-and-id">
+            <!-- <span id="pokemon-name">Pepe</span>
+            <span id="pokemon-id">#45</span> -->
+          </div>
+          <div class="weight-and-size">
+            <!-- <span id="weight">Weight: 548</span>
+            <span id="height">Height: 45</span> -->
+          </div>
+          <div class="sprite-container">
+            <img id="sprite" src="" alt="">
+          </div>
+          <div id="types">
+            <!-- <span class="type psychic">psychic</span>
+            <span class="type electric">electric</span> -->
+          </div>
+        </div>
+        <div class="specifications-table">
+          <table>
+            <thead>
+              <tr>
+                <th>Base</th>
+                <th>Stats</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>HP:</td>
+                <!-- <td id="hp">60</td> -->
+              </tr>
+              <tr>
+                <td>Attack:</td>
+                <!-- <td id="attack">65</td> -->
+              </tr>
+              <tr>
+                <td>Defense:</td>
+                <!-- <td id="defense">60</td> -->
+              </tr>
+              <tr>
+                <td>Sp. Attack:</td>
+                <!-- <td id="special-attack">130</td> -->
+              </tr>
+              <tr>
+                <td>Sp. Defense:</td>
+                <!-- <td id="special-defense">75</td> -->
+              </tr>
+              <tr>
+                <td>Speed:</td>
+                <!-- <td id="speed">110</td> -->
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </main>
+
+</body>
+
+</html>
