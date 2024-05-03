@@ -18,3 +18,4 @@ Los **proyectos principales** para obtener el certificado y que se incluyen son:
 - [Roman Numeral Converter](roman-numeral-converter/)
 - [Telephone Number Validator](telephone-number-validator/)
 - [Cash Register](cash-register-web/)
+- [Pokémon Search App](pokemon-search-app/) (Final project)
