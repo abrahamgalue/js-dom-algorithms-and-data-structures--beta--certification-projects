@@ -32,18 +32,30 @@
 *::after,
 *::before {
   font-family: "montserratregular", system-ui, sans-serif, serif;
+  box-sizing: border-box;
 }
 
+
 body {
-  display: grid;
-  height: 100vh;
   margin: 0;
-  place-items: center;
+}
+
+
+body,
+html {
+  height: 100%;
+}
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
 }
 
 
 .content-container {
-  margin: 0 auto;
   max-width: 420px;
 }
 
