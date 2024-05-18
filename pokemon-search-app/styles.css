@@ -39,7 +39,7 @@ header {
 
 #title {
   color: var(--text-color);
-  font-size: 1.75rem;
+  font-size: 2rem;
 }
 
 main {
@@ -47,19 +47,21 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-bottom: 15px;
 }
 
 .container {
+  background-color: var(--bg-input-color);
   border-radius: 15px;
   border: var(--border);
-  padding: 25px 0px;
-  width: 350px;
-  background-color: var(--bg-input-color);
+  padding: 25px;
+  width: 450px;
 }
 
 .container form {
+  align-items: center;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 10px;
   justify-content: center;
   margin: 10px 0;
@@ -150,7 +152,7 @@ main {
   padding: 5px;
   text-align: center;
   text-transform: uppercase;
-  width: 80px;
+  width: 75px;
 }
 
 /* Special styling for Pokémon types */
@@ -267,7 +269,7 @@ tr th {
 .container form,
 .information,
 .specifications-table {
-  width: 100%;
+  width: 95%;
 }
 
 @media (prefers-color-scheme: light) {
@@ -283,23 +285,29 @@ tr th {
   }
 }
 
-@media screen and (min-width: 550px) {
+@media screen and (max-width: 550px) {
   #title {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 
   .container {
-    padding: 25px;
-    width: 450px;
+    padding: 25px 0px;
+    width: 50vw;
   }
 
   .container form,
   .information,
   .specifications-table {
-    width: 95%;
+    width: 100%;
   }
 
   .type {
-    width: 75px;
+    width: 80px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .container {
+    width: 90vw;
   }
 }
