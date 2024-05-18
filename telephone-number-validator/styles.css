@@ -62,13 +62,17 @@
 }
 
 body {
-  background: url('https://freetools.textmagic.com/build/images/hero-bg-light.aa68dd0e.svg') top var(--blue-50);
-  align-items: center;
   background-size: cover;
+  background: url('https://freetools.textmagic.com/build/images/hero-bg-light.aa68dd0e.svg') top var(--blue-50);
+  margin: 0 0 30px;
+}
+
+.container {
+  align-items: center;
   display: flex;
   flex-direction: column;
+  gap: 35px;
   justify-content: center;
-  padding: 0 0 30px;
 }
 
 header {
@@ -93,15 +97,14 @@ main {
   display: flex;
   flex-direction: column;
   gap: 35px;
-  justify-content: space-between;
-  margin: 35px auto 0;
-  min-height: 200px;
   padding: 40px;
   width: 600px;
 }
 
 .container-input {
-  margin: 0 0 0 -128px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .container-input label {
@@ -185,4 +188,15 @@ main {
 
 .invalid {
   background-color: var(--red-100);
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    width: 85vw;
+  }
+
+  main {
+    padding: 20px;
+    width: 85vw;
+  }
 }
