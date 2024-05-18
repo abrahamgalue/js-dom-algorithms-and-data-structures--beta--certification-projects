@@ -29,16 +29,10 @@
 *::before,
 *::after {
   box-sizing: border-box;
-}
-
-/* remove default spacing */
-/* force styling of type through styling, rather than elements */
-
-* {
   font: inherit;
-  margin: 0;
-  padding: 0;
 }
+
+
 
 /* dark mode user-agent-styles */
 
@@ -49,22 +43,26 @@ html {
 body {
   background-color: var(--color-body);
   color: var(--color-text);
-  display: grid;
-  place-items: center;
-  height: 100vh;
   margin: 0;
+}
+
+html,
+body {
+  height: 100%;
 }
 
 .container {
   align-items: center;
   display: flex;
   flex-direction: column;
+  height: 100%;
   justify-content: center;
 }
 
 .header-container {
   margin: 0 0 2.725rem;
   text-align: center;
+  width: 80vw;
 }
 
 .header-title {
@@ -139,5 +137,11 @@ body {
     /* Input and Button common colors */
     --border-color: #313131;
     --outline-color: #fff;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main-container {
+    width: 80vw;
   }
 }
