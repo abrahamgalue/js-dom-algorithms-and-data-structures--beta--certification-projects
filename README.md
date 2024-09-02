@@ -8,7 +8,7 @@
 
 > 🗝 Puedes verificar aquí la veracidad de mi [**certificado**](https://www.freecodecamp.org/certification/AbrahamGalue/javascript-algorithms-and-data-structures-v8).
 
-![vista-previa](./public/preview/01-certifies-preview.jpg)
+![vista-previa](public/preview/01-certifies-preview.jpg)
 
 ## 🚀 Descripción
 
