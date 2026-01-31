@@ -6,7 +6,7 @@
 
 ### Certificado de freeCodeCamp
 
-> 🗝 Puedes verificar aquí la veracidad de mi [**certificado**](https://www.freecodecamp.org/certification/AbrahamGalue/javascript-algorithms-and-data-structures-v8).
+> 🗝 Puedes verificar aquí la veracidad de mi [**certificado**](https://www.freecodecamp.org/certification/abrahamgalue/javascript-algorithms-and-data-structures-v8).
 
 ![vista-previa](public/preview/01-certifies-preview.jpg)
 
